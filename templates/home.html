@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+        <title>Title - {{ title }} </title>
+        {% else %}
+        <title>Title</title>
+        {% endif %}
+    </head>
+    <body>
+        <h1>Home Page</h1>
+    </body>
+    <div class = "content-section">
+        Select from the below options:
+    </div>
+    <div class = "content-section">
+        <a class="ml-2" href="{{ url_for('input') }}">Input Student</a>
+    </div>
+    <div class = "content-section">
+        <a class="ml-2" href="{{ url_for('update') }}">Update</a>
+    </div>
+    <div class = "content-section">
+        <a class="ml-2" href="{{ url_for('delete') }}">Delete</a>
+    </div>
+    <div class = "content-section">
+        <a class="ml-2" href="{{ url_for('query') }}">Query</a>
+    </div>
+    <div class = "content-section">
+        <a class="ml-2" href="{{ url_for('department') }}">Input Department</a>
+    </div>
+    <div class = "content-section">
+        <a class="ml-2" href="{{ url_for('course') }}">Input Course</a>
+    </div>
+    <div class = "content-section">
+        <a class="ml-2" href="{{ url_for('enroll') }}">Enroll in a Course</a>
+    </div>
+</html>

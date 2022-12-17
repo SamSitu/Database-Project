@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Queried</title>
+    </head>
+    <body>
+    </body>
+    <div class = "content-section">
+        <form method = "POST" action = "">
+            <fieldset class="form-group">
+                {% for department in department %}
+                <h1>{{ department.name }} </h1>
+                <p> Courses: {{ department.course }} </p>
+                <p> Students: {{ department.student_id }} </p>
+                {% endfor %}
+            </fieldset>
+        </form>
+    </div>
+</html>

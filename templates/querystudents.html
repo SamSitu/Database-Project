@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Queried</title>
+    </head>
+    <body>
+    </body>
+    <div class = "content-section">
+        <form method = "POST" action = "">
+            <fieldset class="form-group">
+                {% for student in student %}
+                <h1>{{ student.firstname }} {{ student.lastname}}</h1>
+                <p> ID: {{ student.id }} </p>
+                <p> SSN: {{ student.ssn }} </p>
+                <p> Major: {{ student.major }} </p>
+                <p> Birthday: {{ student.birthdate }} </p>
+                <p> Address: {{ student.address }} </p>
+                <p> GPA: {{ student.gpa }} </p>
+                <p> DEPARTMENT: {{ student.department }} </p>
+                <p> COURSES: {{ student.courses }} </p>
+                {% endfor %}
+            </fieldset>
+        </form>
+    </div>   
+</html>
